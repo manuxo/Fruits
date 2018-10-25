@@ -3,33 +3,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Material icons -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-<!-- Materialize - Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="public/css/style.css">
-<title>MAE - Fruits</title>
+<%@include file="layouts/head.jsp" %>
 </head>
 <body>
 	<header>
+		<%@include file="layouts/header.jsp" %>
 	</header>
 	<main>
 		<div class="container">
+			<div class="row hide-on-large-only">
+				<%@include file="layouts/dashboard.jsp" %>
+			</div>
 			<div class="row">
-				<div class="col s12 m12 l2 xl2">Dashboard</div>
-				<div class="col s12 m12 l8 xl8">Main content</div>
+				<div class="col s12 m12 l12 xl12">
+					<h2 class="center">Home</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m12 l12 xl12">
+					<div class="carousel">
+						<a class="carousel-item" href="#one!"><img src="public/img/apples.png"></a>
+						<a class="carousel-item" href="#two!"><img src="public/img/cucumbers.png"></a>
+						<a class="carousel-item" href="#three!"><img src="public/img/pineapples.png"></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
-	<footer>
-	
+	<footer class="page-footer">
+		<%@include file="layouts/footer.jsp" %>
 	</footer>
-
-	<!-- Materialize - Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script src="public/js/index.js"></script>
+	<%@include file="layouts/bundles.jsp" %>
 </body>
 </html>
