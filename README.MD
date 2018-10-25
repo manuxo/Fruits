@@ -1,4 +1,4 @@
-#Java EE Project
-##demo Servlets & JSP
+# Java EE Project
+## demo Servlets & JSP
 
 Models: Fruits
