@@ -1,0 +1,21 @@
+{
+  "short_name": "Fruits",
+  "name": "MAE - Fruits",
+  "icons": [
+    {
+      "src": "public/img/icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "public/img/icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?installed=true",
+  "background_color": "#ff1744",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ef9a9a"
+}
